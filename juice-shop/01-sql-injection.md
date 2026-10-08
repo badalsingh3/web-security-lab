@@ -167,19 +167,19 @@ Authenticated as Administrator
 The exploitation was documented using the following screenshots:
 
 **Login Page**
-`screenshots/sqli-01-login-page.png`
+![Login Page](screenshots/sqli-01-login-page.png)
 Shows the initial OWASP Juice Shop login interface.
 
 **Normal Login Request**
-`screenshots/sqli-02-normal-login-request.png`
+![Normal Login Request](screenshots/sqli-02-normal-login-request.png)
 Shows the legitimate `POST /rest/user/login` request captured in Burp Suite.
 
 **SQL Injection Request**
-`screenshots/sqli-03-sqli-burp-repeater.png`
+![SQL Injection Request](screenshots/sqli-03-sqli-burp-repeater.png)
 Shows the modified request containing the SQL injection payload: `' OR 1=1-- a`
 
 **Authenticated Administrator**
-`screenshots/sqli-04-authenticated-admin.png`
+![Authenticated Administrator](screenshots/sqli-04-authenticated-admin.png)
 Shows successful authentication as the administrator account.
 
 ## Conclusion
