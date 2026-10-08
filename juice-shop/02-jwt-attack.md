@@ -248,23 +248,23 @@ The application subsequently treated the authenticated session as an administrat
 The exploitation was documented using the following screenshots.
 
 **Original JWT**
-`screenshots/jwt-01-original-token.png`
+![Original JWT](../screenshots/jwt-01-original-token.png)
 Shows the original JWT stored by the application.
 
 **Decoded JWT**
-`screenshots/jwt-02-token-decoded.png`
+![Decoded JWT](../screenshots/jwt-02-token-decoded.png)
 Shows the decoded JWT structure and the original claims.
 
 **Modified JWT Header**
-`screenshots/jwt-03-header-alg-none.png`
+![Modified JWT Header](../screenshots/jwt-03-header-alg-none.png)
 Shows the JWT header modified from `RS256` to `none`.
 
 **Forged Token in Local Storage**
-`screenshots/jwt-04-localstorage-forged-token.png`
+![Forged Token in Local Storage](../screenshots/jwt-04-localstorage-forged-token.png)
 Shows the forged JWT replacing the original token in the browser's Local Storage. The forged token contained the modified administrator role.
 
 **Administration Access**
-`screenshots/jwt-05-administration-access.png`
+![Administration Access](../screenshots/jwt-05-administration-access.png)
 Shows successful access to the Juice Shop administration page after replacing the JWT.
 
 ## Conclusion
